@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { BsPerson } from "react-icons/bs"
 import { BiSearch } from "react-icons/bi"
-import { AiOutlineClose } from "react-icons/ai"
-import { HiOutlineMenuAlt4 } from "react-icons/Hi"
+import { FaBars, FaTimes } from 'react-icons/fa'
 import {
     FaFacebook,
     FaTwitter,
@@ -39,7 +38,7 @@ const Navbar = () => {
 
             {/** Hamburger menu */}
             <div onClick={handleNav} className='md:hidden block z-10'>
-                {nav ? <AiOutlineClose className='text-black' size={20} /> : <HiOutlineMenuAlt4 size={20} />}
+                {nav ? <FaTimes className='text-black' size={20} /> : <FaBars size={20} />}
             </div>
 
             {/** Mobile menu dropdown */}
