@@ -4,7 +4,7 @@ import { AiOutlineSearch } from 'react-icons/ai'
 
 const Hero = () => {
     return (
-        <div className='w-full h-screen relative'>
+        <div name="home" className='w-full h-screen relative'>
             <video className='w-full h-full object-cover' src={beachVid} autoPlay loop muted playsInline/>
 
             {/** Overlay */}
